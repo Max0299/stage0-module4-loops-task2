@@ -4,10 +4,15 @@ public class PrimeNumbers {
     public void printPrimeNumbers(int printToInclusive) {
         int num = 2;
         while (num <= printToInclusive) {
-            for (int i = 2; i <= num / 2; i++) {
-                if (num % i != 0) {
-                    System.out.println(num);
+            boolean isPrime = true;
+            for (int i = 2; i <= num/2 ; i++) {
+                if (num % i == 0) {
+                    isPrime = false;
+                    break;
                 }
+            }
+            if(isPrime){
+                System.out.println(num);
             }
             num++;
         }
