@@ -15,7 +15,7 @@ public class Multiplication {
                 count--;
             }
         }else {
-            System.out.println("");
+            System.out.print("");
         }
     }
 }
